@@ -1,13 +1,15 @@
-package br.com;
+package br.com.config;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
+
+import br.com.service.JiraSevices;
 
 public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(LisboaApplication.class);
+		return application.sources(JiraSevices.class);
 	}
 
 }
